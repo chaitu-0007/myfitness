@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Trainers</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            background:#f2f5f7;
+        }
+
+        /* NAVBAR */
+        .navbar{
+            height:70px;
+            background:#0f2027;
+            color:#fff;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:0 40px;
+        }
+
+        .logo{
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        .navbar ul{
+            list-style:none;
+            display:flex;
+            gap:25px;
+        }
+
+        .navbar ul li a{
+            text-decoration:none;
+            color:#fff;
+            transition:0.3s;
+        }
+
+        .navbar ul li a:hover{
+            color:#1abc9c;
+        }
+
+        /* TRAINER SECTION */
+        .trainer-container{
+            padding:40px;
+        }
+
+        .trainer-container h2{
+            text-align:center;
+            color:#203a43;
+            margin-bottom:30px;
+        }
+
+        .trainer-cards{
+            display:flex;
+            gap:30px;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+
+        .trainer-card{
+            background:#ffffff;
+            width:280px;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.1);
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:12px;
+            transition:0.3s;
+        }
+
+        .trainer-card:hover{
+            transform:translateY(-5px);
+            box-shadow:0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .trainer-img{
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            background:#203a43;
+            color:#fff;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:40px;
+            font-weight:bold;
+        }
+
+        .trainer-card h3{
+            color:#203a43;
+        }
+
+        .trainer-card p{
+            font-size:14px;
+            color:#555;
+            text-align:center;
+        }
+
+        .trainer-btn{
+            margin-top:10px;
+            padding:10px 25px;
+            border-radius:25px;
+            background:#203a43;
+            color:#fff;
+            text-decoration:none;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .trainer-btn:hover{
+            background:#0f2027;
+        }
+
+        @media(max-width:600px){
+            .navbar{
+                flex-direction:column;
+                height:auto;
+                padding:20px;
+                gap:10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">GYM FIT</div>
+        <ul>
+            <li><a href="gym_home_page.html">Home</a></li>
+            <li><a href="slots.html">Book Slot</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- TRAINERS -->
+    <div class="trainer-container">
+        <h2>Meet Our Trainers</h2>
+
+        <div class="trainer-cards">
+            <!-- Suresh -->
+            <div class="trainer-card">
+                <div class="trainer-img">S</div>
+                <h3>Suresh</h3>
+                <p>Strength & Conditioning Coach</p>
+                <p>10+ years experience in bodybuilding and power training.</p>
+                <a href="#" class="trainer-btn">View Profile</a>
+            </div>
+
+            <!-- Vinod -->
+            <div class="trainer-card">
+                <div class="trainer-img">V</div>
+                <h3>Vinod</h3>
+                <p>Certified Personal Trainer</p>
+                <p>Expert in weight loss, cardio, and functional training.</p>
+                <a href="#" class="trainer-btn">View Profile</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

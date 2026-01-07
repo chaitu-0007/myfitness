@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            background:#f2f5f7;
+        }
+
+        /* NAVBAR */
+        .navbar{
+            height:70px;
+            background:#0f2027;
+            color:#fff;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:0 40px;
+        }
+
+        .logo{
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        .navbar ul{
+            list-style:none;
+            display:flex;
+            gap:25px;
+        }
+
+        .navbar ul li a{
+            text-decoration:none;
+            color:#fff;
+            transition:0.3s;
+        }
+
+        .navbar ul li a:hover{
+            color:#1abc9c;
+        }
+
+        /* PROFILE SECTION */
+        .profile-container{
+            padding:40px;
+            display:flex;
+            justify-content:center;
+        }
+
+        .profile-card{
+            background:#fff;
+            width:400px;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.1);
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:15px;
+        }
+
+        .avatar{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            background:#203a43;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:#fff;
+            font-size:40px;
+            font-weight:bold;
+        }
+
+        .profile-card h2{
+            color:#203a43;
+        }
+
+        .info{
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+            margin-top:10px;
+        }
+
+        .info div{
+            display:flex;
+            justify-content:space-between;
+            background:#f2f5f7;
+            padding:10px 15px;
+            border-radius:8px;
+            font-size:14px;
+        }
+
+        .label{
+            font-weight:bold;
+            color:#203a43;
+        }
+
+        .profile-btn{
+            margin-top:20px;
+            padding:10px 25px;
+            border-radius:25px;
+            background:#203a43;
+            color:#fff;
+            text-decoration:none;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .profile-btn:hover{
+            background:#0f2027;
+        }
+
+        @media(max-width:500px){
+            .profile-card{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">GYM FIT</div>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="slots.html">Book Slot</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- PROFILE CONTENT -->
+    <div class="profile-container">
+        <div class="profile-card">
+            <div class="avatar">C</div>
+            <h2>Chaitanya</h2>
+            <p>Fitness Enthusiast 💪</p>
+
+            <div class="info">
+                <div>
+                    <span class="label">Email</span>
+                    <span>chaitanya@gmail.com</span>
+                </div>
+                <div>
+                    <span class="label">Phone</span>
+                    <span>+91 98765 43210</span>
+                </div>
+                <div>
+                    <span class="label">Membership</span>
+                    <span>Active (Monthly)</span>
+                </div>
+                <div>
+                    <span class="label">Joined On</span>
+                    <span>12 Jan 2025</span>
+                </div>
+            </div>
+
+            <a href="#" class="profile-btn">Edit Profile</a>
+        </div>
+    </div>
+
+</body>
+</html>

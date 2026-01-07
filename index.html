@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Welcome Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            height: 400px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .left {
+            flex: 1;
+            background-color: #111111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left img {
+            width: 150px;
+            height: auto;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .right h1 {
+            font-size: 36px;
+            color: #203a43;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .login-btn {
+            background-color: #203a43;
+            color: #ffffff;
+        }
+
+        .login-btn:hover {
+            background-color: #0f2027;
+        }
+
+        .signup-btn {
+            border: 2px solid #203a43;
+            color: #203a43;
+        }
+
+        .signup-btn:hover {
+            background-color: #203a43;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Section: Logo -->
+        <div class="left">
+            <img src="./fitness-sport-gym-logo-design-vector.webp" alt="Gym Logo" width="50px" height="50px">
+        </div>
+
+        <!-- Right Section: Welcome + Buttons -->
+        <div class="right">
+            <h1>Welcome</h1>
+            <div class="buttons">
+                <a href="./login.html" class="login-btn">Login</a>
+                <a href="./ginup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #f2f5f7;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            height: 70px;
+            background: #0f2027;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #1abc9c;
+        }
+
+        /* MAIN */
+        .main {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .main h2 {
+            color: #203a43;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #ffffff;
+            width: 300px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #203a43;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555555;
+            line-height: 1.4;
+        }
+
+        /* BUTTON STYLE (ANCHOR AS BUTTON) */
+        .card-btn {
+            margin-top: auto;
+            padding: 10px;
+            border-radius: 20px;
+            background: #203a43;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .card-btn:hover {
+            background: #0f2027;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+                gap: 10px;
+            }
+
+            .cards {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">MY FITNESS</div>
+        <ul>
+            <li><a href="gym_home_page.html">Home</a></li>
+            <li><a href="./trainers.html">Trainers</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <h2>Welcome Back!</h2>
+
+        <div class="cards">
+
+            <!-- Book Slot Card -->
+            <div class="card">
+                <h3>Book Slot</h3>
+                <p>Reserve your workout slot in advance and avoid waiting time at the gym.</p>
+                <a href="slots.html" class="card-btn">Book Now</a>
+            </div>
+
+            <!-- Get Membership Card -->
+            <div class="card">
+                <h3>Get Membership</h3>
+                <p>Join our gym and start your fitness journey with exciting plans and offers.</p>
+                <a href="plans.html" class="card-btn">Get Membership</a>
+            </div>
+
+            <!-- Recharge Membership Card -->
+            <div class="card">
+                <h3>Recharge Membership</h3>
+                <p>Renew your membership easily and continue your fitness routine without breaks.</p>
+                <a href="./plans.html" class="card-btn">Recharge Now</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

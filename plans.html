@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans</title>
+    <style>
+        body{
+            margin:0; padding:0; font-family:Arial, Helvetica, sans-serif;
+            background:#f2f5f7; min-height:100vh;
+        }
+        .container{
+            padding:40px; display:flex; flex-direction:column; gap:30px;
+        }
+        h2{text-align:center; color:#203a43;}
+        .plans{
+            display:flex; gap:25px; flex-wrap:wrap; justify-content:center;
+        }
+        .plan{
+            background:#fff; width:280px; padding:25px; border-radius:15px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.1);
+            display:flex; flex-direction:column; gap:10px; align-items:center;
+        }
+        .plan h3{color:#203a43;}
+        .price{font-size:22px; font-weight:bold; color:#0f2027;}
+        button{
+            margin-top:10px; padding:10px 20px; border:none; border-radius:20px;
+            background:#203a43; color:#fff; cursor:pointer; font-weight:bold;
+        }
+        button:hover{background:#0f2027;}
+        a{text-align:center; text-decoration:none; color:#203a43; font-weight:bold;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Choose Your Membership Plan</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Monthly</h3>
+                <p class="price">₹999</p>
+                <p>Access to all equipment</p>
+                <button>Select Plan</button>
+            </div>
+            <div class="plan">
+                <h3>Quarterly</h3>
+                <p class="price">₹2499</p>
+                <p>+ Free trainer guidance</p>
+                <button>Select Plan</button>
+            </div>
+            <div class="plan">
+                <h3>Yearly</h3>
+                <p class="price">₹8999</p>
+                <p>All benefits + Diet plan</p>
+                <button>Select Plan</button>
+            </div>
+        </div>
+        <a href="homepage.html">← Back to Home</a>
+    </div>
+</body>
+</html>
